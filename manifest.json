@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-financial-data",
-  "version": "1.0.0",
-  "description": "Financial Data Feed — Alpha Vantage/FMP/Yahoo Finance/Polygon.io for stock screeners, technical indicators, portfolio reports",
+  "version": "1.0.1",
+  "description": "Financial Data Feed \u2014 Alpha Vantage/FMP/Yahoo Finance/Polygon.io for stock screeners, technical indicators, portfolio reports",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,10 +9,21 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-financial-data",
   "homepage": "https://cortexprism.io/marketplace/plugins/financial-data",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
-    { "name": "fin_get_quote", "description": "Get real-time or historical quote", "params": [] },
-    { "name": "fin_screen_stocks", "description": "Screen stocks by criteria", "params": [] },
+    {
+      "name": "fin_get_quote",
+      "description": "Get real-time or historical quote",
+      "params": []
+    },
+    {
+      "name": "fin_screen_stocks",
+      "description": "Screen stocks by criteria",
+      "params": []
+    },
     {
       "name": "fin_technical_indicators",
       "description": "Calculate technical indicators",
@@ -25,6 +36,13 @@
     }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
